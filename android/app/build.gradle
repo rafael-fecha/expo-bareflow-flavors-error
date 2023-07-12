@@ -101,6 +101,22 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+
+    flavorDimensions "env"
+    productFlavors {
+       production {
+            dimension "env"
+            applicationId = "com.bareflowproject"
+        }
+        dev {
+            dimension "env"
+            applicationId = "com.bareflowproject.dev"
+        }
+        staging {
+            dimension "env"
+            applicationId = "com.bareflowproject.staging"
+        }
+    }
 }
 
 dependencies {

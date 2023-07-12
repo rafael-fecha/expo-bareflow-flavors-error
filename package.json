@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "yarn expo run:android",
+    "android": "yarn expo run:android --variant devDebug --no-build-cache",
     "ios": "yarn expo run:ios",
     "lint": "eslint .",
     "start": "react-native start",
